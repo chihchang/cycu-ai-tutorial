@@ -10,7 +10,7 @@ def save_model_pb(model, pb_filename):
     K.set_learning_phase(0)
     frozen_graph = _freeze_session(K.get_session(),
                               output_names=[out.op.name for out in model.outputs])
-    tf.train.write_graph(frozen_graph, '', pb_filename, as_text=False)
+    tf.train.write_graph(frozen_graph, 'model/', pb_filename, as_text=False)
 
 
 def _freeze_session(session, keep_var_names=None, output_names=None, clear_devices=True):
