@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# this helper function is borrowed from https://medium.com/@pipidog/how-to-convert-your-keras-models-to-tensorflow-e471400b886a
+# these helper functions are borrowed from https://medium.com/@pipidog/how-to-convert-your-keras-models-to-tensorflow-e471400b886a
 
 import tensorflow as tf
 
